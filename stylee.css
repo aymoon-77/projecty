@@ -1,0 +1,113 @@
+/*! imports */
+@font-face {
+    font-family:'outfit' ;
+    src: url(./static/Outfit-Light.ttf);
+    font-weight: 300;
+}
+@font-face {
+    font-family:'outfit' ;
+    src: url(./static/Outfit-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family:'outfit' ;
+    src: url(./static/Outfit-SemiBold.ttf);
+    font-weight: 600;
+}
+/*! reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+ul{
+    list-style: none;
+}
+/*! global */
+:root{
+--Soft-blue: hsl(215, 51%, 70%);
+--Cyan:hsl(178, 100%, 50%);
+--Very-dark-blue-mainBG: hsl(217, 54%, 11%);
+--Very-dark-blue-cardBG: hsl(216, 50%, 16%);
+--Very-dark-blue-line: hsl(215, 32%, 27%);
+--White: hsl(0, 0%, 100%);
+}
+body{
+    background-color: var(--Very-dark-blue-mainBG);
+    line-height: 1.6;
+    font-size: 18px;
+    font-family:'outfit';
+}
+h1{
+    color: var(--White);
+}
+/*! body */
+/* ?main */
+main{
+    background-color: var(--Very-dark-blue-cardBG);
+    max-width: 100%;
+    padding: 2em ;
+    margin: 20px auto;
+    border-radius: .625em;
+}
+main p{
+    color: var(--Soft-blue);
+}
+.duration span:first-child{
+    color: var(--Cyan);
+}
+.duration span:nth-child(2){
+    color: var(--Soft-blue);
+    text-indent: 6.5em;
+}
+main img{
+    border-radius: .625em;
+}
+/*? footer  */
+footer img{
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 2em;
+    height: 2em; 
+    /* margin-right: 20px;
+    margin-bottom: -25px; */
+    vertical-align: middle;
+}
+footer::before{
+    content: '';
+    display: block;
+    border: .1px solid  hsl(215, 32%, 27%);; 
+}
+footer span.paragraph-0{
+    color: var(--Soft-blue);
+}
+footer span.paragraph{
+    color: var(--White);
+}
+footer span.paragraph{
+    text-indent: 20em;
+}
+      
+
+/*! media query */
+@media  screen and (min-width: 600px) {
+    main{
+        max-width: 45%;
+        padding: 2.5em;
+        padding-left: 3em;
+        margin: 30px auto;
+    }
+    .duration span:nth-child(2) {
+        text-indent: 4em;
+    }
+    .duration span:nth-child(2){
+        color: var(--Soft-blue);
+        text-indent: 22em;
+    }
+}
